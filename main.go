@@ -25,8 +25,8 @@ type Event struct {
 type DB struct{}
 
 func (d *DB) Exec(query string, args ...any) {
-	// ここでInsertされる
-	time.Sleep(500 * time.Microsecond)
+	// 今回は100msec待機
+	time.Sleep(100 * time.Microsecond)
 }
 
 type Kakikomu struct {
